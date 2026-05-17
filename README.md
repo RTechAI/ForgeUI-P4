@@ -476,7 +476,7 @@ ForgeUI P4 uses and acknowledges third-party software and vendor ecosystems incl
 Please review all third-party licenses before redistribution or commercial use.
 
 
-DISCLAIMER
+DISCLAIMER.
 
 This project is provided as-is without warranty.
 
