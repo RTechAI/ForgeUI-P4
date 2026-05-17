@@ -2,24 +2,34 @@ FORGEUI SOURCE AVAILABLE LICENSE
 Version 1.0
 
 Copyright (c) 2026 Scott Forster / ForgeUI
-Some rights reserved.
+All rights reserved except where explicitly permitted below.
 
 
 ============================================================
 OVERVIEW
 ============================================================
 
-ForgeUI is a custom ESP32-P4 application framework and UI
-baseline developed for embedded systems using:
+ForgeUI is a modular ESP32-P4 embedded application framework,
+hardware baseline, and LVGL user interface architecture
+developed for real embedded products using:
 
 - ESP-IDF
 - LVGL
 - ESP-Hosted WiFi
 - Waveshare ESP32-P4 board support ecosystems
-- related managed components
+- related Espressif managed components
 
-ForgeUI provides a reusable embedded application structure,
-runtime architecture, and hardware-proven UI baseline.
+ForgeUI provides:
+
+- reusable embedded UI architecture
+- hardware-proven ESP32-P4 bring-up
+- modular runtime systems
+- reusable LVGL patterns
+- product-oriented embedded structure
+- ESP32-P4 application foundations
+
+ForgeUI is intended as a clean embedded product baseline,
+not a demo-only environment.
 
 
 ============================================================
@@ -30,11 +40,12 @@ You may:
 
 - Use ForgeUI for personal projects
 - Use ForgeUI for educational purposes
-- Use ForgeUI for evaluation/testing
+- Use ForgeUI for learning and evaluation
 - Use ForgeUI for internal commercial development
 - Modify ForgeUI-owned source files
 - Build commercial products using ForgeUI
 - Distribute compiled firmware binaries built using ForgeUI
+- Use ForgeUI as part of a larger embedded product
 
 
 ============================================================
@@ -47,15 +58,20 @@ You may NOT:
   without written permission from the copyright holder
 
 - Repackage ForgeUI as a competing framework,
-  starter kit, or commercial baseline
+  SDK, starter kit, or commercial baseline
 
 - Sell ForgeUI source code directly
 
 - Remove ForgeUI attribution notices from
   ForgeUI-owned source files
 
+- Remove or alter copyright notices
+
 - Misrepresent upstream third-party components
   as ForgeUI-owned technology
+
+- Claim ownership of upstream open-source projects,
+  drivers, BSP layers, or managed components
 
 
 ============================================================
@@ -63,7 +79,7 @@ THIRD-PARTY COMPONENTS
 ============================================================
 
 ForgeUI depends on third-party open-source software,
-drivers, and board support packages.
+drivers, frameworks, and board support packages.
 
 These components remain the property of their respective
 copyright holders and are licensed separately under
@@ -90,7 +106,7 @@ Key upstream dependencies include:
   - esp_codec_dev
 
 - Waveshare ESP32-P4-WIFI6-Touch-LCD-7B BSP
-  and related support components
+  and related board support components
 
 
 ============================================================
@@ -105,11 +121,13 @@ ForgeUI does NOT claim ownership of:
 - Espressif managed components
 - upstream drivers
 - upstream examples
+- upstream middleware
 - third-party libraries
 
 All required upstream copyright notices,
-SPDX headers, and license texts must remain
-intact where required by their original licenses.
+SPDX headers, license texts, and attribution
+requirements must remain intact where required
+by their original licenses.
 
 
 ============================================================
@@ -117,22 +135,28 @@ PROJECT OWNERSHIP BOUNDARY
 ============================================================
 
 ForgeUI-owned code primarily exists within
-the project application layer, including:
+the application layer and project architecture,
+including but not limited to:
 
 - main/
 - ForgeUI runtime modules
-- ForgeUI configuration system
+- ForgeUI configuration systems
 - ForgeUI UI architecture
 - ForgeUI themes and layouts
-- ForgeUI system integration logic
+- ForgeUI integration logic
+- ForgeUI Reactor UI systems
+- ForgeUI documentation
+- ForgeUI original assets
 
 The following areas are considered upstream-managed
 dependency territory:
 
 - managed_components/
-- ESP-IDF internal build system
+- ESP-IDF internal build systems
 - vendor BSP implementations
 - upstream LVGL internals
+- third-party middleware
+- generated framework tooling
 
 
 ============================================================
@@ -146,6 +170,7 @@ express or implied, including but not limited to:
 - merchantability
 - fitness for a particular purpose
 - noninfringement
+- production suitability
 
 In no event shall the authors or copyright holders
 be liable for any claim, damages, or other liability
@@ -165,7 +190,8 @@ ESP32-P4 bring-up and evaluation workflows using:
 - managed Espressif components
 
 ForgeUI has since evolved into a standalone
-application architecture and runtime framework.
+embedded UI architecture and runtime framework.
+
 
 ============================================================
 BUILD ATTRIBUTION
@@ -185,7 +211,7 @@ Recommended attribution examples:
 Author attribution:
 
 Scott Forster
-email forgeui.esp32@gmail.com
+forgeui.esp32@gmail.com
 ForgeUI Project
 
 Attribution may appear in:
@@ -197,11 +223,26 @@ Attribution may appear in:
 - Release notes
 - Firmware information pages
 - Git repositories
-- Demo videos/screenshots
+- Demo videos
+- Screenshots
+- Marketing material
 
 Removal of original ForgeUI attribution from redistributed
 ForgeUI-based builds is not permitted without written permission
 from the copyright holder.
+
+
+============================================================
+COMMERCIAL PRODUCTS
+============================================================
+
+Commercial products built using ForgeUI are permitted.
+
+However:
+
+- ForgeUI source code itself may not be redistributed
+- ForgeUI attribution requirements still apply
+- upstream third-party license obligations must still be respected
 
 
 ============================================================
